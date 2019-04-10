@@ -31,19 +31,20 @@ public class MainFrame extends JFrame {
         jb1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (90 <= Integer.parseInt(tf.getText()) && 100 >= Integer.parseInt(tf.getText())) {
+                int v1 = Math.round(Float.parseFloat(tf.getText()));
+                if (90 <= v1 && 100 >= v1) {
                     jlb.setText("A");
                 } else {
-                    if (80 <= Integer.parseInt(tf.getText()) && 90 >= Integer.parseInt(tf.getText())) {
+                    if (80 <=  v1 && 90 >=  v1) {
                         jlb.setText("B");
                     } else {
-                        if (70 <= Integer.parseInt(tf.getText()) && 80 >= Integer.parseInt(tf.getText())) {
+                        if (70 <= v1 && 80 >=  v1) {
                             jlb.setText("C");
                         } else {
-                            if (60 <= Integer.parseInt(tf.getText()) && 70 >= Integer.parseInt(tf.getText())) {
+                            if (60 <=  v1 && 70 >=  v1) {
                                 jlb.setText("D");
                             } else {
-                                if (60 > Integer.parseInt(tf.getText())) {
+                                if (60 >  v1) {
                                     jlb.setText("E");
                                 }
 
